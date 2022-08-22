@@ -21,13 +21,6 @@ body {
     justify-self: center;
     justify-items: center;
     max-width: calc(100vw - 10%);
-    
-    /*
-    background-image: url(./design/mobile-design.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 1360px;
-    */
 }
 
 .main-text {
@@ -72,11 +65,6 @@ body {
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 5px 20px 0px var(--grayish-blue);
-    /*
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    */
 }
 
 .card-1 {
@@ -111,14 +99,14 @@ img {
     width: 57px;
     justify-self: end;
     align-self: end;
-    /*
-    display: flex;
-    align-self: flex-end;
-    */
 }
 
 
 @media screen and (min-width: 915px) {
+
+    .main-text__title-1, .main-text__title-2 {
+        font-size: 2.5em;
+    }
 
     .cards {
         display: grid;
@@ -148,5 +136,9 @@ img {
     .card {
         max-width: 350px;
     }
+
+    img {
+        height: 66px;
+        width: 66px;
 }
 
