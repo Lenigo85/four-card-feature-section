@@ -1,0 +1,113 @@
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+    display: grid;
+}
+
+.container {
+    display: grid;
+    justify-self: center;
+    justify-items: center;
+    grid-template-rows: repeat(6, minmax(min-content, 225px));
+    grid-template-columns: minmax(min-content, 500px);
+    grid-row-gap: 21px;
+    max-width: calc(100vw - 10%);
+    /*
+    background-image: url(./design/mobile-design.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1360px;
+    */
+}
+
+.main-text {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.main-text__title-1 {
+    font-weight: lighter;
+    margin: 10px 0 0;
+}
+
+.main-text__title-1, .main-text__title-2 {
+    color: var(--very-dark-blue);
+    font-size: 1.62em;
+}
+
+.main-text__title-2 {
+    margin-top: 10px;
+}
+
+.main-text__p {
+    line-height: 24px;
+    color: var(--grayish-blue);
+    margin-bottom: 58px;
+}
+
+.card {
+    display: grid;
+    max-width: 315px;
+    padding: 30px;
+    color: var(--grayish-blue);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 5px 20px 0px var(--grayish-blue);
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    */
+}
+
+.card-1 {
+    border-top: 4px solid var(--cyan);
+}
+
+.card-2 {
+    border-top: 4px solid var(--red);
+}
+
+.card-3 {
+    border-top: 4px solid var(--orange);
+}
+
+.card-4 {
+    border-top: 4px solid var(--blue);
+}
+
+.card__text-h2 {
+    color: var(--very-dark-blue);
+    font-size: 1.4em;
+    padding-bottom: 10px;
+}
+
+.card__text-p {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+img {
+    height: 57px;
+    width: 57px;
+    justify-self: end;
+    align-self: end;
+    /*
+    display: flex;
+    align-self: flex-end;
+    */
+}
+
+
